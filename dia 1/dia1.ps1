@@ -7,7 +7,6 @@ $valor = 50
 # la contraseña es el numero de veces que el candado vale 0, lo voy a llamar $vueltas
 $vueltas = 0
 #if($valor -eq 0){ $click++}
-# lo mas cutre pero que funcione que se me ocurre para hacer es literalmente hacer un monton de bucles for encadenados
 # por cada linea del input, hacer estas operaciones
 Get-Content '.\input' | ForEach-Object {
     $valorAntes = $valor
@@ -51,4 +50,5 @@ Get-Content '.\input' | ForEach-Object {
         Write-Host "ya van" $vueltas "vueltas"
     }
 }
+
 Write-host "da" $vueltas "vueltas"
